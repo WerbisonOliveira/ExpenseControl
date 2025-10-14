@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #1677d8;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,213 @@
+#general {
+    color: #fff;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#general h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+}
+
+.general-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.info {
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3.5rem;
+    position: relative;
+}
+
+.info-graphic {
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: #000; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.desc-money, .desc-expense, .desc-graphic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 1rem;
+}
+
+.icon-money {
+    color: #1e9e1e;
+    font-size: 1.5rem;
+}
+.icon-expense {
+    color: #9e1e1e;
+    font-size: 1.5rem;
+}
+
+.icon-graphic {
+    color: #1677d8;
+    font-size: 1.5rem;
+}
+
+.value-money {
+    color: #1e9e1e;
+    font-size: 1.5rem;
+     
+}
+
+.value-expense {
+    color: #9e1e1e;
+    font-size: 1.5rem;
+}
+
+.value-money span, .value-expense span {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.last-deposit, .last-expense {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.last-add-deposit {
+    border-radius: 25px;
+    color: #FFF;
+    background-color: #1e9e1e;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.last-add-expense {
+    border-radius: 25px;
+    color: #FFF;
+    background-color: #9e1e1e;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.deposit, .expense {
+    border-top: 1px solid #CCC;
+    padding: 0.5rem;
+    height: 150px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 1px 1px 7px #0000005b;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.deposit {
+    border: 2px solid #1e9e1e;
+}
+
+.expense {
+    border: 2px solid #9e1e1e;
+}
+
+.deposit p, .expense p {
+    width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.deposit span, .expense span {
+    font-weight: bold;
+}
+
+.last-deposit:nth-child(1) {
+    border-bottom: 1px solid #CCC;
+}
+
+.info-graphicMonth {
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem;
+    color: #000; 
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    margin-bottom: 8rem;
+}
+
+.container-graphicMonth {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 8rem 0 5rem;
+}
+
+.feedback {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.feedback p {
+    color: #a1a1a1;
+}
+
+.container-month {
+    width: 100%;
+    text-align: right;
+}
+
+.month {
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+
+.month:focus {
+    outline: none;
+}
+
+.month option {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    #general h2 {
+        margin-bottom: 5rem;
+    }
+}
+

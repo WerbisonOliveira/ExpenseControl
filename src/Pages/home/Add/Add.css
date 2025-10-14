@@ -1,0 +1,113 @@
+.container-form-add {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-add {
+    padding: 1rem 0 2rem;
+    color: #FFF;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0rem 0.5rem;
+}
+
+.container-form-add form {
+    width: 700px;
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 4px;
+    padding-bottom: 2rem;
+}
+
+.form-input-add {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-input-add label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.form-input-add label > span {
+    color: #9e1e1e;
+}
+
+.form-input-add input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 2px solid #000;
+}
+
+.form-input-add input:focus {
+    border: 2px solid #1677d8;
+    outline: none;
+}
+
+.form-input-add #type  {
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.form-input-add #type:focus {
+    border: 2px solid #1677d8;
+    outline: none;
+}
+
+.form-input-add #description {
+    height: 200px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    resize: none;
+    border-radius: 4px;
+    border: 2px solid #000;
+}
+
+.form-input-add #description:focus {
+    outline: none;
+    border: 2px solid #1677d8;
+}
+
+.btn-add {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #1677d8;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.btn-add:hover {
+    opacity: 1;   
+}
+
+@media (max-width: 450px) {
+    .container-form-add {
+        width: 90vw;
+    }
+
+    .container-form-add form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .container-form-add form > p {
+        margin-bottom: 0.5rem;
+    }
+}

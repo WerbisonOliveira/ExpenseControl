@@ -1,0 +1,82 @@
+.background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    background-color: #12121258;
+}
+.modal-exit {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+.modal-exit p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.exit {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.exit button {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-cancel {
+    background-color: #1677d8;
+    color: #FFF;
+    opacity: 0.8;
+    transition: 0.4s;
+    border: none;
+}
+
+.btn-cancel:hover {
+    opacity: 1;
+}
+
+.btn-exit {
+    border: none;
+    background-color: #e21313ca;
+    color: #FFF;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.btn-exit:hover {
+    opacity: 1;
+}
+
+@media (max-width: 450px) {
+    .background {
+        z-index: 7;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .modal-exit {
+        width: 90vw;
+        text-align: center;
+    }
+}

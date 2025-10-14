@@ -1,0 +1,80 @@
+.container-background-deleteAccount {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background-color: #0000004c;
+}
+
+.container-modal-deleteAccount {
+    width: 400px;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: #e21313ca;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 4;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.383);
+}
+
+.container-modal-deleteAccount h3 {
+    text-align: center;
+}
+
+.container-modal-deleteAccount p {
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+}
+
+.container-btn-deleteAccount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn-cancel-deleteAccount {
+    align-self: center;
+    font-size: 1rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #1677d8;
+    color: #FFF;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.btn-delete-deleteAccount {
+    font-size: 1rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #9e1e1e;
+    color: #FFF;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.btn-cancel-deleteAccount:hover, .btn-delete-deleteAccount:hover {
+    opacity: 1;
+}
+
+@media (max-width: 450px) {
+    .container-modal-deleteAccount {
+        width: 95vw;
+    }
+}

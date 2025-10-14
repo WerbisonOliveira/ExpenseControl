@@ -1,0 +1,122 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 7px #00000035;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.sidebar h2 {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #000;
+}
+
+.sidebar-options {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 300px;
+    padding: 1rem;
+    
+}
+
+.sidebar-options h2 {
+    padding-left: 1rem;
+}
+
+.option {
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.option:hover {
+    background-color: #ccc;
+    padding-left: 2.5rem;
+}
+
+.signOut {
+    margin-top: 19rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #c1c1c1;
+    opacity: 0.8;
+    transition: 0.4s;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.signOut:hover {
+    opacity: 1;
+}
+
+.container-close-menu {
+    display: none;
+}
+
+@media (max-width: 450px) {
+    .sidebar {
+        transition: 0.4s;
+        transform: translateX(-400px);
+        position: absolute;
+        z-index: 6;
+    }
+
+    .sidebar-options h2 {
+        font-size: 1.3rem;
+        border-bottom: 1px solid #CCC;
+        padding-bottom: 1rem;
+    }
+
+    .sidebar-options {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .show {
+        width: 100%;
+        height: 100vh;
+        transition: 0.4s;
+        transform: translateX(0px);
+        background-color: #ffffff;
+        z-index: 6;
+        position: absolute;
+    }
+
+    .container-close-menu {
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .close-menu {
+        font-size: 2rem;
+    }
+
+    .signOut {
+        margin-top: 15rem;
+    }
+}
