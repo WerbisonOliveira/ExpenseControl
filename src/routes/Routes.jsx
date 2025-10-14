@@ -22,19 +22,19 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path: "/login",
+                path: "login",
                 element: <Login />
             },
             {
-                path: "/ResetPassword",
+                path: "ResetPassword",
                 element: <FormChangePassword />
             },
             {
-                path: "/register",
+                path: "register",
                 element: <Register />
             },
             {
-                path: "/home",
+                path: "home",
                 element: <PrivateRoute>
                             <ContextDataProvider>
                                 <Home />
