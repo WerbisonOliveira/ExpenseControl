@@ -18,23 +18,23 @@ import FormChangePassword from '../components/FormChangePassword/FormChangePassw
 
 export const router = createBrowserRouter([
     {
-        path: "/ExpenseControl/login",
+        path: "/ExpenseControl",
         element: <App />,
         children: [
             {
-                path: "/ExpenseControl/login",
+                path: "login",
                 element: <Login />
             },
             {
-                path: "/ExpenseControl/ResetPassword",
+                path: "ResetPassword",
                 element: <FormChangePassword />
             },
             {
-                path: "/ExpenseControl/register",
+                path: "register",
                 element: <Register />
             },
             {
-                path: "/ExpenseControl/home",
+                path: "home",
                 element: <PrivateRoute>
                             <ContextDataProvider>
                                 <Home />
@@ -42,19 +42,19 @@ export const router = createBrowserRouter([
                          </PrivateRoute>,
                 children: [
                     {
-                        path: "/ExpenseControl/home",
+                        path: "home",
                         element: <General />
                     },
                     {
-                        path: "/ExpenseControl/home/add",
+                        path: "add",
                         element: <Add />
                     },
                     {
-                        path: "/ExpenseControl/home/history",
+                        path: "history",
                         element: <History />
                     },
                     {
-                        path: "/ExpenseControl/home/settings",
+                        path: "settings",
                         element: <Settings />
                     }
                 ]
