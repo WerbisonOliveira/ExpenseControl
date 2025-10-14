@@ -17,7 +17,7 @@ const Sidebar = ({exit, name, menu, setMenu}) => {
             <ul className='sidebar-options' >
                 <h2>Olá, {name}</h2>
                 
-                <NavLink to="/home" onClick={() => setMenu(false)}><li className='option'>Geral<IoHomeOutline /></li></NavLink>
+                <NavLink to="" onClick={() => setMenu(false)}><li className='option'>Geral<IoHomeOutline /></li></NavLink>
                 
                 <NavLink to="/home/add" onClick={() => setMenu(false)}><li className='option'>Adicionar<IoAddCircleOutline /></li></NavLink>
                 
