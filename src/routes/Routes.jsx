@@ -42,7 +42,7 @@ export const router = createBrowserRouter([
                          </PrivateRoute>,
                 children: [
                     {
-                        path: "home",
+                        path: "",
                         element: <General />
                     },
                     {
