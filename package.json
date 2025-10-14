@@ -1,5 +1,4 @@
 {
-  "homepage": "https://werbisonoliveira.github.io/ExpenseControl",
   "name": "expense_control",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "firebase": "^12.3.0",
