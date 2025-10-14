@@ -18,7 +18,7 @@ import FormChangePassword from '../components/FormChangePassword/FormChangePassw
 
 export const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/ExpenseControl",
         element: <App />,
         children: [
             {
