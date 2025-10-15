@@ -242,6 +242,10 @@
 }
 
 @media (max-width: 450px) {
+    .title-history {
+        margin-top: 4rem;
+    }
+
     .container-form-history {
         width: 95vw;
         display: flex;

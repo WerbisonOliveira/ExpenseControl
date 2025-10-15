@@ -109,6 +109,10 @@
         width: 95vw;
     }
 
+    .title-settings{
+        margin-top: 4rem;
+    }
+
     .settings form {
         display: flex;
         flex-direction: column;

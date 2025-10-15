@@ -207,7 +207,7 @@
 
 @media (max-width: 450px) {
     #general h2 {
-        margin-bottom: 5rem;
+        margin: 5rem 0rem;
     }
 
     .info-graphicMonth {
