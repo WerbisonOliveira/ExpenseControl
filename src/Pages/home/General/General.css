@@ -209,5 +209,13 @@
     #general h2 {
         margin-bottom: 5rem;
     }
+
+    .info-graphicMonth {
+        width: 95vw;
+    }
+
+    .container-month {
+        width: 95vw;
+    }
 }
 

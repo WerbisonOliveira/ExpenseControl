@@ -42,9 +42,12 @@
         flex-direction: column;
     }
     .container-menu {
-        /* padding: 0.5rem; */
+        width: 95vw;
         display: block;  
     }
 
+    .menu {
+        margin-left: 0.7rem;
+    }
 }
 
