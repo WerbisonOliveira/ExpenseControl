@@ -11,10 +11,11 @@ const Sidebar = ({exit, name, menu, setMenu}) => {
 
     return (
         <div className={menu ? "show" : "sidebar"}>
-            <div className='container-close-menu'>
-                <IoMdClose className='close-menu' onClick={() => setMenu(false)}/>
-            </div>
             <ul className='sidebar-options' >
+                <div className='container-close-menu'>
+                    <IoMdClose className='close-menu' onClick={() => setMenu(false)}/>
+                </div>
+                
                 <h2>Olá, {name}</h2>
                 
                 <NavLink to="" onClick={() => setMenu(false)}><li className='option'>Geral<IoHomeOutline /></li></NavLink>
@@ -24,9 +25,8 @@ const Sidebar = ({exit, name, menu, setMenu}) => {
                 <NavLink to="/home/history" onClick={() => setMenu(false)}><li className='option'>Histórico <BiHistory/></li></NavLink>
             
                 <NavLink to="/home/settings" onClick={() => setMenu(false)}><li className='option'>Configurações<IoSettingsOutline /></li></NavLink>
-
-                <button onClick={() => exit(true)} className='signOut'><BiArrowToLeft/> Sair</button> 
             </ul>
+            <button onClick={() => exit(true)} className='signOut'><BiArrowToLeft/> Sair</button> 
         </div>
     )
 }

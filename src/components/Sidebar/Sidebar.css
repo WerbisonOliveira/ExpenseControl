@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: #ffffff;
     position: sticky;
     top: 0;
@@ -51,7 +52,7 @@
 }
 
 .signOut {
-    margin-top: 19rem;
+    margin-bottom: 2rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -96,13 +97,17 @@
     }
 
     .show {
-        width: 100%;
+        width: 75vw;
         height: 100vh;
         transition: 0.4s;
         transform: translateX(0px);
         background-color: #ffffff;
         z-index: 6;
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .container-close-menu {
@@ -117,6 +122,6 @@
     }
 
     .signOut {
-        margin-top: 15rem;
+        margin-bottom: 3rem;
     }
 }
