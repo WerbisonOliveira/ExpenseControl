@@ -5,6 +5,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
 }
 
 .title-add {
@@ -12,7 +13,7 @@
     color: #FFF;
     font-size: 2rem;
     text-align: center;
-    margin: 0rem 0.5rem;
+    margin: 3rem 0.5rem 0rem;
 }
 
 .container-form-add form {
@@ -99,7 +100,7 @@
 
 @media (max-width: 450px) {
     .container-form-add {
-        width: 90vw;
+        width: 95vw;
     }
 
     .container-form-add form {

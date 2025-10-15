@@ -20,7 +20,6 @@
 .container-form {
     text-align: left;
     width: 700px;
-    height: max-content;
     background-color: #FFF;
     padding: 1rem;
     border-radius: 4px;
@@ -127,9 +126,8 @@
 @media (max-width: 450px) {
     .container-form {
         width: 90vw !important;
-        height: 88vh;
         padding: 0rem 1rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
 
     .form-title {
@@ -138,5 +136,9 @@
 
     .form-input-update #description {
         height: 130px;
+    }
+
+    .btn-update {
+        margin-bottom: 1rem;
     }
 }
