@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import { ContextDataProvider } from '../context/ContextData';
 
@@ -22,19 +22,23 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path: "login",
+                index: true,
+                element: <Navigate to="/login" />
+            },
+            {
+                path: "/login",
                 element: <Login />
             },
             {
-                path: "ResetPassword",
+                path: "/ResetPassword",
                 element: <FormChangePassword />
             },
             {
-                path: "register",
+                path: "/register",
                 element: <Register />
             },
             {
-                path: "home",
+                path: "/home",
                 element: <PrivateRoute>
                             <ContextDataProvider>
                                 <Home />
