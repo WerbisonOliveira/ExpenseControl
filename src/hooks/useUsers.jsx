@@ -1,5 +1,5 @@
 import { db } from "../services/firebaseConfig";
-import { getDocs, collection, updateDoc, deleteDoc, doc, query, where } from "firebase/firestore";
+import { getDocs, collection, updateDoc, doc, query, where, onSnapshot } from "firebase/firestore";
 import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 
@@ -9,12 +9,14 @@ export const useUsers = () => {
     const collectionUserRef = query(collection(db, "users"), where("userId", "==", value.uid));
     
     useEffect(() => {
-        const getData = async () => {
-            const data = await getDocs(collectionUserRef);
-            setUser(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
-        }
+        const getData = onSnapshot(collectionUserRef, (snapshot) => {
+            const data = () => {
+                setUser(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id})));
+            }
+            data();
+        })
 
-        getData();
+        return () => getData();
         
     }, []);
 
