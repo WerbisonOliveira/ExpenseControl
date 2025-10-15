@@ -21,15 +21,26 @@ const Settings = () => {
   let [isChangeEmail, setIsChangeEmail] = useState(false);
   const [deleteAccount, setDeleteAccount] = useState(false);
   const [feedbackDeleteAccount, setFeedbackDeleteAccount] = useState(false);
+  let nameUser = "";
+  let emailUser = "";
+  let id = "";
  
   const handleDeleteAccount = async () => {
       deleteAccountUser(value, value.uid)
   }
 
+  if(user) {
+      user?.map((user) => {
+          nameUser = user.name;
+          emailUser = user.email;
+          id = user.id;
+    })
+  }
+
 
   return (
     <section className='container-settings'>
-      {edit && <FormEditSettings setEdit={setEdit} setLoading={setLoading} setFeedback={setFeedback} name={user[0]?.name} email={user[0]?.email} id={user[0]?.id} setIsChangeEmail={setIsChangeEmail} />}
+      {edit && <FormEditSettings setEdit={setEdit} setLoading={setLoading} setFeedback={setFeedback} name={nameUser} email={emailUser} id={id} setIsChangeEmail={setIsChangeEmail} />}
       {loading && <Loading />}
       {feedback && <Feedback text={isChangeEmail ? "Dados atualizados com sucesso! Faça a verificação do seu novo email." : "Dados atualizados com sucesso!"} setModal={setFeedback} />}
       {deleteAccount && <ModalDeleteAccount deleteAccount={handleDeleteAccount} setLoading={setLoading} setDeleteAccount={setDeleteAccount} setFeedbackDeleteAccount={setFeedbackDeleteAccount} />}
@@ -41,11 +52,11 @@ const Settings = () => {
           <div className="container-control-input">
             <div className="control-input">
               <label htmlFor="email">Email:</label>
-              <input type="email" name='email' id='email' defaultValue={user.map((user) => user.email)} disabled/>
+              <input type="email" name='email' id='email' defaultValue={emailUser} disabled/>
             </div>
             <div className="control-input">
               <label htmlFor="name">Nome:</label>
-              <input type="text" name='name' id='name' defaultValue={user.map((user) => user.name)} disabled/>
+              <input type="text" name='name' id='name' defaultValue={nameUser} disabled/>
             </div>
           </div>
           <div className="container-btn-settings">
