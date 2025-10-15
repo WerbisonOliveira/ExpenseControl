@@ -9,7 +9,6 @@
     margin-bottom: 2rem;
     border: 4px;
     z-index: 4;
-    background-color: #0000004c;
 }
 
 .title-update {
@@ -130,6 +129,7 @@
         width: 90vw !important;
         height: 88vh;
         padding: 0rem 1rem;
+        margin-top: 3rem;
     }
 
     .form-title {

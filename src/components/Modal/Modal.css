@@ -6,7 +6,6 @@
     align-items: center;
     position: absolute;
     z-index: 5;
-    background-color: #12121258;
 }
 .modal-exit {
     width: 400px;
