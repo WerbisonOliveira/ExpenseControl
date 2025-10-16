@@ -20,4 +20,4 @@
 * CSS – estilização e layout responsivo
 
 
-### Link de acesso: <a href="https://expense-control-iota.vercel.app/login" target="_blank" >https://expense-control-iota.vercel.app/login</a>
+### Link de acesso: [https://expense-control-iota.vercel.app/login](https://expense-control-iota.vercel.app/login)
