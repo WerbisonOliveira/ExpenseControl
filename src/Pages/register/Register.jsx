@@ -29,6 +29,7 @@ const Register = () => {
     
 
     const handleSubmit = async (event) => {
+        setLoading(true)
         event.preventDefault();
         const user = await createUserWithEmailAndPassword(email, password);
         
@@ -36,7 +37,6 @@ const Register = () => {
             console.clear();
         }
 
-        setLoading(true)
         setTimeout(async () => {
             setEmail("");
             setPassword("");
@@ -52,7 +52,7 @@ const Register = () => {
             if(user) {
                 await sendEmailVerification(user.user);
             }
-        }, 2000)
+        }, 1500)
 
 
     }
